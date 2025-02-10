@@ -17,3 +17,4 @@ D:\Project\DotNetCourse\Bulky\Bulky.DataAccess\obj\Debug\net8.0\refint\Bulky.Dat
 D:\Project\DotNetCourse\Bulky\Bulky.DataAccess\obj\Debug\net8.0\Bulky.DataAccess.pdb
 D:\Project\DotNetCourse\Bulky\Bulky.DataAccess\obj\Debug\net8.0\Bulky.DataAccess.genruntimeconfig.cache
 D:\Project\DotNetCourse\Bulky\Bulky.DataAccess\obj\Debug\net8.0\ref\Bulky.DataAccess.dll
+D:\Project\DotNetCourse\Bulky\Bulky.DataAccess\obj\Debug\net8.0\Bulky.DataAccess.sourcelink.json
