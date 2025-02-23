@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg"
     },
     {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
+      "PackagePath": "staticwebassets\\js\\product.js"
+    },
+    {
       "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

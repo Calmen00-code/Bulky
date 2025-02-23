@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "H/h0edSaGhhf4xR7M+UQdDqEoB71v7XB3q1CGTm7AV4=",
+  "Hash": "QJTLiq99IYHVeBfTZ7fgQx4/qi+jKKsC5DTfALtvX+Q=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -110,6 +110,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "js/product.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\product.js"
     },
     {
       "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\site.js",
