@@ -20,7 +20,7 @@ namespace Bulky.DataAccess.Repository
             _db = db;
             this.dbSet = _db.Set<T>();
             
-            // using EF core to populate category using ForeginKey relation
+            // using EF core to populate category object using ForeginKey relation
             _db.Products.Include(u => u.Category).Include(u => u.CategoryId);
         }
 

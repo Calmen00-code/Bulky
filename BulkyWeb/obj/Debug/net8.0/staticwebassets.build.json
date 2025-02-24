@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "QJTLiq99IYHVeBfTZ7fgQx4/qi+jKKsC5DTfALtvX+Q=",
+  "Hash": "ar8mUxVUPpt0abuCqVKKcu6qaGPiX1NOZnkJViakqT4=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -93,12 +93,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg",
+      "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\55c5db36-6980-4b9b-a7aa-7a2851e9d67b.jpg",
       "SourceId": "BulkyWeb",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\",
       "BasePath": "_content/BulkyWeb",
-      "RelativePath": "images/product/01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg",
+      "RelativePath": "images/product/55c5db36-6980-4b9b-a7aa-7a2851e9d67b.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -109,7 +109,26 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg"
+      "OriginalItemSpec": "wwwroot\\images\\product\\55c5db36-6980-4b9b-a7aa-7a2851e9d67b.jpg"
+    },
+    {
+      "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\a95b9268-c156-4feb-93ef-4f84a122cc54.jpg",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "images/product/a95b9268-c156-4feb-93ef-4f84a122cc54.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\product\\a95b9268-c156-4feb-93ef-4f84a122cc54.jpg"
     },
     {
       "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",

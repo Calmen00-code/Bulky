@@ -13,8 +13,12 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg",
-      "PackagePath": "staticwebassets\\images\\product\\01d7d3e4-554e-4632-a1e6-e5512c2cb3b9.jpg"
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\55c5db36-6980-4b9b-a7aa-7a2851e9d67b.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\55c5db36-6980-4b9b-a7aa-7a2851e9d67b.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\a95b9268-c156-4feb-93ef-4f84a122cc54.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\a95b9268-c156-4feb-93ef-4f84a122cc54.jpg"
     },
     {
       "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",

@@ -111,15 +111,16 @@ namespace BulkyWeb.Areas.Admin.Controllers
                 {
                     // Create path
                     _unitOfWork.ProductRepository.Add(productVM.Product);
+                    TempData["success"] = "Product created successfully!";
                 }
                 else
                 {
                     // Update path
                     _unitOfWork.ProductRepository.Update(productVM.Product);
+                    TempData["success"] = "Product updated successfully!";
                 }
 
                 _unitOfWork.Save();
-                TempData["success"] = "Product created successfully!";
                 return RedirectToAction("Index", "Product");
             }
             else
@@ -134,32 +135,6 @@ namespace BulkyWeb.Areas.Admin.Controllers
             }
         }
 
-        public IActionResult Delete(int? id)
-        {
-            Product? product = _unitOfWork.ProductRepository.Get(u => u.Id == id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
-        }
-
-        [HttpPost]
-        public IActionResult Delete(Product product)
-        {
-            Product? productDelete = _unitOfWork.ProductRepository.Get(u => u.Id == product.Id);
-
-            if (productDelete == null)
-            {
-                System.Diagnostics.Debug.WriteLine("not found");
-                return NotFound();
-            }
-            _unitOfWork.ProductRepository.Remove(productDelete);
-            _unitOfWork.Save();
-            TempData["success"] = "Product deleted successfully!";
-            return RedirectToAction("Index", "Product");
-        }
-
         // this allow API to be called by external sources
         #region API CALLS
 
@@ -168,6 +143,32 @@ namespace BulkyWeb.Areas.Admin.Controllers
         {
             List<Product> products = _unitOfWork.ProductRepository.GetAll(includeProperties: "Category").ToList();
             return Json(new {data = products});
+        }
+
+        // remove this HttpDelete tag when u are not using SweetAlert
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            var productToBeDeleted = _unitOfWork.ProductRepository.Get(u => u.Id == id);
+            if (productToBeDeleted == null)
+            {
+                return Json(new {success = false, message = "Error while deleting"});
+            }
+
+            string wwwRootPath = _webHostEnvironment.WebRootPath;
+
+            var oldImagePath = 
+                Path.Combine(wwwRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+
+            if (System.IO.File.Exists(oldImagePath))
+            {
+                System.IO.File.Delete(oldImagePath);
+            }
+
+            _unitOfWork.ProductRepository.Remove(productToBeDeleted);
+            _unitOfWork.Save();
+
+            return Json(new {success = true, message = "Deleted Successful"});
         }
 
         #endregion
