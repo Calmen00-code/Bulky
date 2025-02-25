@@ -21,6 +21,54 @@
       "PackagePath": "staticwebassets\\images\\product\\a95b9268-c156-4feb-93ef-4f84a122cc54.jpg"
     },
     {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\book.png",
+      "PackagePath": "staticwebassets\\images\\product\\book.png"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\cotton_candy_back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\cotton_candy_back.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\dark skies back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\dark skies back.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\dark_skies.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\dark_skies.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\fortune of time back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\fortune of time back.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\fortune of time.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\fortune of time.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\lawn_leaf.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\lawn_leaf.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\leaves and wonder back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\leaves and wonder back.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\leaves_and_wonders.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\leaves_and_wonders.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\rock_in_the_ocean back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\rock_in_the_ocean back.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\rock_in_the_ocean.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\rock_in_the_ocean.jpg"
+    },
+    {
+      "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\images\\product\\vanish in the sunset back.jpg",
+      "PackagePath": "staticwebassets\\images\\product\\vanish in the sunset back.jpg"
+    },
+    {
       "Id": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
       "PackagePath": "staticwebassets\\js\\product.js"
     },
