@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\Project\\DotNetCourse\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,26 +34,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250301150047_addIdentityTable.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Migrations\\20250301150047_addIdentityTable.cs",
+              "ViewState": "AQIAAJ0AAAAAAAAAAAAgwKkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T15:00:47.907Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Program.cs",
+              "RelativeDocumentMoniker": "BulkyWeb\\Program.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Program.cs",
+              "RelativeToolTip": "BulkyWeb\\Program.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAAB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-01T14:49:19.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABQAAAAAAAAAAAAwwB4AAAAzAAAA",
+              "ViewState": "AQIAABcAAAAAAAAAAAAwwCgAAABLAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-01T04:47:11.642Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "_LoginPartial.cshtml",
               "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_LoginPartial.cshtml",
               "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AQIAAAEAAAAAAAAAAAAwwAkAAAAmAAAA",
+              "ViewState": "AQIAABAAAAAAAAAAAAAwwBQAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-01T04:47:00.216Z",
               "EditorCaption": ""
