@@ -9,3 +9,5 @@ D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.dll
 D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\refint\Bulky.Utility.dll
 D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.pdb
 D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\ref\Bulky.Utility.dll
+D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.sourcelink.json
+D:\Project\DotNetCourse\Bulky\Bulky.Utility\obj\Debug\net8.0\Bulky.Utility.csproj.AssemblyReference.cache
