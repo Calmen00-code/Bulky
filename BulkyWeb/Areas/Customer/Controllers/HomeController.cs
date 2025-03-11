@@ -44,7 +44,20 @@ namespace BulkyWeb.Areas.Customer.Controllers
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
             cart.ApplicationUserId = userId;
 
-            _unitOfWork.ShoppingCartRepository.Add(cart);
+            ShoppingCart cartFromDb = _unitOfWork.ShoppingCartRepository.Get(u => u.ApplicationUserId == userId &&
+                u.ProductId == cart.ProductId);
+
+            if (cartFromDb != null)
+            {
+                // shopping cart already exist, only update shopping cart here
+                cartFromDb.Count += cart.Count;
+                _unitOfWork.ShoppingCartRepository.Update(cartFromDb);
+            }
+            else
+            {
+                // shopping cart does not exist, create a new cart for this userId and productId
+                _unitOfWork.ShoppingCartRepository.Add(cart);
+            }
             _unitOfWork.Save();
 
             return RedirectToAction(nameof(Index));
