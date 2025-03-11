@@ -58,6 +58,8 @@ namespace BulkyWeb.Areas.Customer.Controllers
                 // shopping cart does not exist, create a new cart for this userId and productId
                 _unitOfWork.ShoppingCartRepository.Add(cart);
             }
+            TempData["success"] = "Cart updated successfully!";
+
             _unitOfWork.Save();
 
             return RedirectToAction(nameof(Index));

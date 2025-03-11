@@ -29,9 +29,16 @@ namespace Bulky.DataAccess.Repository
             dbSet.Add(entity);
         }
 
-        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null)
+        public T Get(Expression<Func<T, bool>> filter, string? includeProperties = null, bool tracked = false)
         {
             IQueryable<T> query = dbSet;
+
+            // disable tracking model using Entity Framework Core by default
+            if (!tracked)
+            {
+                query = dbSet.AsNoTracking();
+            }
+
             query = query.Where(filter);
             if (!string.IsNullOrEmpty(includeProperties))
             {
