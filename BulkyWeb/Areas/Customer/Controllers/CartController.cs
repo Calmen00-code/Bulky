@@ -38,6 +38,11 @@ namespace BulkyWeb.Areas.Customer.Controllers
             return View(ShoppingCartVM);
         }
 
+        public IActionResult Summary()
+        {
+            return View();
+        }
+
         public IActionResult Plus(int cardId)
         {
             var cartFromDb = _unitOfWork.ShoppingCartRepository.Get(u => u.Id == cardId);
