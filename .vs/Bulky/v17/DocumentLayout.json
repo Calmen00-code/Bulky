@@ -3,32 +3,60 @@
   "WorkspaceRootPath": "D:\\Project\\DotNetCourse\\Bulky\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\unitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\customer\\views\\cart\\summary.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\orderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\orderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\irepository\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iorderheaderrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\repository\\irepository\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\repository\\irepository\\iorderdetailrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5573B0A9-2398-4F25-A50C-52C46F9C0049}|Bulky.DataAccess\\Bulky.DataAccess.csproj|solutionrelative:bulky.dataaccess\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\orderdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\orderheader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\viewmodels\\productvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\shoppingcart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\customer\\controllers\\cartcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|d:\\project\\dotnetcourse\\bulky\\bulkyweb\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6AE2E1C9-4C93-4546-A9E7-F83958D409F5}|BulkyWeb\\BulkyWeb.csproj|solutionrelative:bulkyweb\\areas\\customer\\views\\cart\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\viewmodels\\shoppingcartvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\viewmodels\\shoppingcartvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|d:\\project\\dotnetcourse\\bulky\\bulky.models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2A02F23F-0BAD-4E05-A9DE-E6F4DD01DE64}|Bulky.Models\\Bulky.Models.csproj|solutionrelative:bulky.models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,97 +69,184 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAADQAAABEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T14:06:58.668Z",
+              "DocumentIndex": 1,
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IUnitOfWork.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:37:00.983Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Summary.cshtml",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Views\\Cart\\Summary.cshtml",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAG4AAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T14:05:41.565Z",
+              "DocumentIndex": 0,
+              "Title": "UnitOfWork.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\UnitOfWork.cs",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAQwB4AAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:36:59.223Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ShoppingCart.cs",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ShoppingCart.cs",
-              "RelativeDocumentMoniker": "Bulky.Models\\ShoppingCart.cs",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ShoppingCart.cs",
-              "RelativeToolTip": "Bulky.Models\\ShoppingCart.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAqwA0AAAAUAAAA",
+              "Title": "20250313133629_renameOrderDetailToOrderDetails.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Migrations\\20250313133629_renameOrderDetailToOrderDetails.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T13:45:15.647Z",
+              "WhenOpened": "2025-03-13T13:36:29.206Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "CartController.cs",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwCoAAAAVAAAA",
+              "Title": "OrderHeaderRepository.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\OrderHeaderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T13:43:33.495Z",
+              "WhenOpened": "2025-03-13T13:35:09.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "OrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\OrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:32:26.087Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Product.cs",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\Product.cs",
-              "RelativeDocumentMoniker": "Bulky.Models\\Product.cs",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\Product.cs",
-              "RelativeToolTip": "Bulky.Models\\Product.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAAwwAAAAAAAAAAA",
+              "Title": "IOrderDetailRepository.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IOrderDetailRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAABEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T13:41:56.459Z"
+              "WhenOpened": "2025-03-13T13:31:59.231Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "IOrderHeaderRepository.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Repository\\IRepository\\IOrderHeaderRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:31:15.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Bulky.DataAccess\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:26:57.666Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Bulky.Models\\ApplicationUser.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Bulky.Models\\ApplicationUser.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:16:57.629Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ShoppingCart.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ShoppingCart.cs",
+              "RelativeDocumentMoniker": "Bulky.Models\\ShoppingCart.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ShoppingCart.cs",
+              "RelativeToolTip": "Bulky.Models\\ShoppingCart.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:16:52.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductVM.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "RelativeDocumentMoniker": "Bulky.Models\\ViewModels\\ProductVM.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ViewModels\\ProductVM.cs",
+              "RelativeToolTip": "Bulky.Models\\ViewModels\\ProductVM.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:16:45.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "ShoppingCartVM.cs",
               "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ViewModels\\ShoppingCartVM.cs",
               "RelativeDocumentMoniker": "Bulky.Models\\ViewModels\\ShoppingCartVM.cs",
               "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\ViewModels\\ShoppingCartVM.cs",
               "RelativeToolTip": "Bulky.Models\\ViewModels\\ShoppingCartVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAUAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-12T13:41:39.801Z"
+              "WhenOpened": "2025-03-13T13:16:44.526Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
-              "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
-              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
-              "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Views\\Cart\\Index.cshtml",
-              "ViewState": "AQIAADYAAAAAAAAAAAAswEsAAAAtAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-12T13:37:49.547Z",
-              "EditorCaption": ""
+              "DocumentIndex": 8,
+              "Title": "OrderDetail.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\OrderDetail.cs",
+              "RelativeDocumentMoniker": "Bulky.Models\\OrderDetail.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\OrderDetail.cs",
+              "RelativeToolTip": "Bulky.Models\\OrderDetail.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABoAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:12:40.012Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OrderHeader.cs",
+              "DocumentMoniker": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\OrderHeader.cs",
+              "RelativeDocumentMoniker": "Bulky.Models\\OrderHeader.cs",
+              "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\Bulky.Models\\OrderHeader.cs",
+              "RelativeToolTip": "Bulky.Models\\OrderHeader.cs",
+              "ViewState": "AQIAABYAAAAAAAAAAAAqwCMAAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T13:12:32.165Z"
             }
           ]
         }
