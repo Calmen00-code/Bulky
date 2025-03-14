@@ -77,17 +77,17 @@ namespace BulkyWeb.Areas.Customer.Controllers
         [ActionName("Summary")]
         public IActionResult SummaryPOST()
         {
-            ShoppingCartVM.shoppingCarts = _unitOfWork.ShoppingCartRepository.GetAll(u => u.ApplicationUserId == userId,
-                includeProperties: "Product");
-
             // retrieve the userID of currently logged in user
             var claimsIdentity = (ClaimsIdentity)User.Identity;
             var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
 
+            ShoppingCartVM.shoppingCarts = _unitOfWork.ShoppingCartRepository.GetAll(u => u.ApplicationUserId == userId,
+                includeProperties: "Product");
+
             ShoppingCartVM.OrderHeader.OrderDate = System.DateTime.Now;
             ShoppingCartVM.OrderHeader.ApplicationUserId = userId;
 
-            ShoppingCartVM.OrderHeader.ApplicationUser = _unitOfWork.ApplicationUserRepository.Get(u => u.Id == userId);
+            ApplicationUser applicationUser = _unitOfWork.ApplicationUserRepository.Get(u => u.Id == userId);
 
             // calculating for total price
             foreach (var cart in ShoppingCartVM.shoppingCarts)
@@ -96,22 +96,21 @@ namespace BulkyWeb.Areas.Customer.Controllers
                 ShoppingCartVM.OrderHeader.OrderTotal += (cart.Price * cart.Count);
             }
 
-            if (ShoppingCartVM.OrderHeader.ApplicationUser.CompanyId.GetValueOrDefault() == 0)
+            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
             {
-                // regular customer account and we need to capture payment
+                // regular customer account
                 ShoppingCartVM.OrderHeader.PaymentStatus = SD.PAYMENT_STATUS_PENDING;
                 ShoppingCartVM.OrderHeader.OrderStatus = SD.ORDER_STATUS_PENDING;
             }
             else
             {
-                // company user
+                // company user account
                 ShoppingCartVM.OrderHeader.PaymentStatus = SD.PAYMENT_STATUS_DELAYED_PAYMENT;
                 ShoppingCartVM.OrderHeader.OrderStatus = SD.ORDER_STATUS_APPROVED;
             }
 
             _unitOfWork.OrderHeaderRepository.Add(ShoppingCartVM.OrderHeader);
             _unitOfWork.Save();
-
 
             // creating order details
             foreach (var cart in ShoppingCartVM.shoppingCarts)
@@ -127,7 +126,18 @@ namespace BulkyWeb.Areas.Customer.Controllers
                 _unitOfWork.Save();
             }
 
-            return View(ShoppingCartVM);
+            if (applicationUser.CompanyId.GetValueOrDefault() == 0)
+            {
+                // regular customer account and we need to capture payment
+                // stripe logic
+            }
+
+            return RedirectToAction(nameof(OrderConfirmation), new { orderId = ShoppingCartVM.OrderHeader.Id });
+        }
+
+        public IActionResult OrderConfirmation(int orderId)
+        {
+            return View(orderId);
         }
 
         public IActionResult Plus(int cardId)
