@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
               "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
               "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Order\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABsAAAALAAAA",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAADsAAAAqAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-16T13:11:36.724Z",
               "EditorCaption": ""
@@ -63,8 +63,7 @@
               "RelativeToolTip": "BulkyWeb\\wwwroot\\js\\order.js",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAIAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-16T13:01:44.977Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T13:01:44.977Z"
             },
             {
               "$type": "Document",
@@ -76,8 +75,7 @@
               "RelativeToolTip": "Bulky.Models\\ViewModels\\OrderVM.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:57:41.995Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T12:57:41.995Z"
             },
             {
               "$type": "Document",
@@ -89,8 +87,7 @@
               "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Controllers\\ProductController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:54:26.059Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T12:54:26.059Z"
             },
             {
               "$type": "Document",
@@ -102,8 +99,7 @@
               "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Controllers\\OrderController.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAEAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:54:16.511Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T12:54:16.511Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "BulkyWeb\\Areas\\Customer\\Controllers\\CartController.cs",
               "ViewState": "AQIAAHAAAAAAAAAAAAAcwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T12:52:58.498Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-16T12:52:58.498Z"
             }
           ]
         }
