@@ -4,7 +4,10 @@ using Bulky.Models.ViewModels;
 using Bulky.Utility;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Stripe;
+using Stripe.Checkout;
 using System.Security.Claims;
+using static System.Net.WebRequestMethods;
 
 namespace BulkyWeb.Areas.Customer.Controllers
 {
@@ -130,14 +133,71 @@ namespace BulkyWeb.Areas.Customer.Controllers
             {
                 // regular customer account and we need to capture payment
                 // stripe logic
+
+                var domain = "https://localhost:7123/";
+                var options = new SessionCreateOptions
+                {
+                    SuccessUrl = domain + $"customer/cart/OrderConfirmation?id={ShoppingCartVM.OrderHeader.Id}",
+                    CancelUrl = domain + $"customer/cart/index",
+                    LineItems = new List<SessionLineItemOptions>(),
+                    Mode = "payment",
+                };
+
+                foreach (var item in ShoppingCartVM.shoppingCarts)
+                {
+                    var sessionLineItem = new SessionLineItemOptions
+                    {
+                        PriceData = new SessionLineItemPriceDataOptions
+                        {
+                            UnitAmount = (long)(item.Price * 100), // $20.50 ==> 2050
+                            Currency = "myr",
+                            ProductData = new SessionLineItemPriceDataProductDataOptions
+                            {
+                                Name=item.Product.Title,
+                            }
+                        },
+                        Quantity = item.Count
+                    };
+                    options.LineItems.Add(sessionLineItem);
+                }
+
+                var service = new SessionService();
+                Session session = service.Create(options);
+                _unitOfWork.OrderHeaderRepository.UpdateStripePaymentID(ShoppingCartVM.OrderHeader.Id, session.Id, session.PaymentIntentId);
+                _unitOfWork.Save();
+
+                Response.Headers.Add("Location", session.Url);
+                return new StatusCodeResult(303);
             }
 
-            return RedirectToAction(nameof(OrderConfirmation), new { orderId = ShoppingCartVM.OrderHeader.Id });
+            return RedirectToAction(nameof(OrderConfirmation), new { id = ShoppingCartVM.OrderHeader.Id });
         }
 
-        public IActionResult OrderConfirmation(int orderId)
+        public IActionResult OrderConfirmation(int id)
         {
-            return View(orderId);
+            OrderHeader orderHeader = _unitOfWork.OrderHeaderRepository.Get(u => u.Id == id, includeProperties: "ApplicationUser");
+            if (orderHeader.PaymentStatus != SD.PAYMENT_STATUS_DELAYED_PAYMENT)
+            {
+                // order by customer
+
+                var service = new SessionService();
+                Session session = service.Get(orderHeader.SessionId);
+
+                if (session.PaymentStatus.ToLower() == SD.STRIPE_PAID)
+                {
+                    _unitOfWork.OrderHeaderRepository.UpdateStripePaymentID(id, session.Id, session.PaymentIntentId);
+                    _unitOfWork.OrderHeaderRepository.UpdateStatus(id, SD.ORDER_STATUS_APPROVED, SD.PAYMENT_STATUS_APPROVED);
+                    _unitOfWork.Save();
+                }
+            }
+
+            List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCartRepository
+                .GetAll(u => u.ApplicationUserId == orderHeader.ApplicationUserId).ToList();
+
+            _unitOfWork.ShoppingCartRepository.RemoveRange(shoppingCarts);
+            _unitOfWork.Save();
+
+            return View(id);
         }
 
         public IActionResult Plus(int cardId)

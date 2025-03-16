@@ -24,5 +24,12 @@ namespace Bulky.Utility
         public const string PAYMENT_STATUS_APPROVED = "Approved";
         public const string PAYMENT_STATUS_DELAYED_PAYMENT = "ApprovedForDelayedPayment";
         public const string PAYMENT_STATUS_REJECTED = "Rejected";
+
+
+        // this status represent the status return by stripe,
+        // refer: https://docs.stripe.com/api/checkout/sessions/object#checkout_session_object-payment_status
+        public const string STRIPE_PAID = "paid";
+        public const string STRIPE_NO_PAYMENT_REQUIRED = "no_payment_required";
+        public const string STRIPE_UNPAID = "unpaid";
     }
 }
