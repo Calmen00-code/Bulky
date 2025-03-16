@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aMQhfDV3GtkV3a2KMUR4Z2j80iKVbc3DxEmiLEk1pww=",
+  "Hash": "HhK0E992JcMyWB28Rln/zrLE62BpRMf6X5nBgkU1I2Q=",
   "Source": "BulkyWeb",
   "BasePath": "_content/BulkyWeb",
   "Mode": "Default",
@@ -1554,6 +1554,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\company.js"
+    },
+    {
+      "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\order.js",
+      "SourceId": "BulkyWeb",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\",
+      "BasePath": "_content/BulkyWeb",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\wwwroot\\js\\product.js",
