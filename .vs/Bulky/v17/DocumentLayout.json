@@ -33,10 +33,6 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "order.js",
@@ -48,6 +44,10 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-03-16T13:01:44.977Z",
               "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
               "$type": "Document",
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "BulkyWeb\\Areas\\Admin\\Views\\Order\\Details.cshtml",
               "ToolTip": "D:\\Project\\DotNetCourse\\Bulky\\BulkyWeb\\Areas\\Admin\\Views\\Order\\Details.cshtml",
               "RelativeToolTip": "BulkyWeb\\Areas\\Admin\\Views\\Order\\Details.cshtml",
-              "ViewState": "AQIAAB0AAAAAAAAAAADwvzgAAAAkAAAA",
+              "ViewState": "AQIAAMUAAAAAAAAAAADwv+YAAABrAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-03-16T15:17:35.642Z",
               "EditorCaption": ""
