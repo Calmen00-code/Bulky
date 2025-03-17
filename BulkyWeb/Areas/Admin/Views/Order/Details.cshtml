@@ -234,10 +234,31 @@
                                     </div>
                                 </li>
                             </ul>
-                            <input type="submit" class="btn btn-success form-control my-1" value="Pay Now" />
-                            <input type="submit" class="btn btn-primary form-control my-1" value="Start Processing" />
-                            <input type="submit" class="btn btn-primary form-control my-1" value="Ship Order" />
-                            <input type="submit" class="btn btn-danger form-control my-1" value="Cancel Order" />
+                            @if (Model.OrderHeader.PaymentStatus == SD.PAYMENT_STATUS_DELAYED_PAYMENT &&
+                                 Model.OrderHeader.OrderStatus == SD.ORDER_STATUS_SHIPPED)
+                            {
+                                <button type="submit" class="btn btn-success form-control my-1" value="Pay Now">Pay Now</button>
+                            }
+                            
+                            @if (User.IsInRole(SD.ROLE_ADMIN) || User.IsInRole(SD.ROLE_EMPLOYEE))
+                            {
+                                @if (Model.OrderHeader.OrderStatus == SD.ORDER_STATUS_APPROVED)
+                                {
+                                    <button type="submit" class="btn btn-primary form-control my-1" value="Start Processing">Start Processing</button>
+                                }
+
+                                @if (Model.OrderHeader.OrderStatus == SD.ORDER_STATUS_PROCESSING)
+                                {
+                                    <button type="submit" class="btn btn-primary form-control my-1" value="Ship Order">Ship Order</button>
+                                }
+
+                                @if (Model.OrderHeader.OrderStatus != SD.ORDER_STATUS_REFUNDED &&
+                                     Model.OrderHeader.OrderStatus != SD.ORDER_STATUS_CANCELLED &&
+                                     Model.OrderHeader.OrderStatus != SD.ORDER_STATUS_SHIPPED)
+                                {
+                                    <button type="submit" class="btn btn-danger form-control my-1" value="Cancel Order">Cancel Order</button>
+                                }
+                            }
                         </div>
                     </div>
                 </div>
