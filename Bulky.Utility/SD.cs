@@ -31,5 +31,7 @@ namespace Bulky.Utility
         public const string STRIPE_PAID = "paid";
         public const string STRIPE_NO_PAYMENT_REQUIRED = "no_payment_required";
         public const string STRIPE_UNPAID = "unpaid";
+
+        public const string SESSION_CART = "SessionShoppingCart";
     }
 }
