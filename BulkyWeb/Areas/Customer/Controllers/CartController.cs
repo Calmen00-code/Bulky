@@ -66,7 +66,6 @@ namespace BulkyWeb.Areas.Customer.Controllers
             ShoppingCartVM.OrderHeader.PostalCode = ShoppingCartVM.OrderHeader.ApplicationUser.PostalCode;
             ShoppingCartVM.OrderHeader.PhoneNumber = ShoppingCartVM.OrderHeader.ApplicationUser.PhoneNumber;
 
-
             // calculating for total price
             foreach (var cart in ShoppingCartVM.shoppingCarts)
             {
@@ -206,6 +205,7 @@ namespace BulkyWeb.Areas.Customer.Controllers
             cartFromDb.Count += 1;
             _unitOfWork.ShoppingCartRepository.Update(cartFromDb);
             _unitOfWork.Save();
+            UpdateCartCount();
             return RedirectToAction(nameof(Index));
         }
 
@@ -222,17 +222,17 @@ namespace BulkyWeb.Areas.Customer.Controllers
                 _unitOfWork.ShoppingCartRepository.Update(cartFromDb);
             }
             _unitOfWork.Save();
+            UpdateCartCount();
             return RedirectToAction(nameof(Index));
         }
-
         public IActionResult Remove(int cardId)
         {
             var cartFromDb = _unitOfWork.ShoppingCartRepository.Get(u => u.Id == cardId);
             _unitOfWork.ShoppingCartRepository.Remove(cartFromDb);
             _unitOfWork.Save();
+            UpdateCartCount();
             return RedirectToAction(nameof(Index));
         }
-
 
         private double GetPriceBaseOnQuantity(ShoppingCart cart)
         {
@@ -248,6 +248,21 @@ namespace BulkyWeb.Areas.Customer.Controllers
             {
                 return cart.Product.Price100;
             }
+        }
+
+        private void UpdateCartCount()
+        {
+            // retrieve the userID of currently logged in user
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // setting session for displaying count in cart icon
+            int updateCount = 0;
+            foreach (var userCart in _unitOfWork.ShoppingCartRepository.GetAll(u => u.ApplicationUserId == userId))
+            {
+                updateCount += userCart.Count; 
+            }
+            HttpContext.Session.SetInt32(SD.SESSION_CART, updateCount);
         }
 
     }

@@ -22,6 +22,16 @@ namespace BulkyWeb.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
+            // retrieve the userID of currently logged in user
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
+            
+            if (claim != null)
+            {
+                // reflect the cart count if user is logged in
+                UpdateCartCount();
+            }
+
             IEnumerable<Product> products = _unitOfWork.ProductRepository.GetAll(includeProperties: "Category").ToList();
             return View(products);
         }
@@ -63,20 +73,12 @@ namespace BulkyWeb.Areas.Customer.Controllers
             }
 
             _unitOfWork.Save();
-
-            // setting session for displaying count in cart icon
-            int updateCount = 0;
-            foreach (var userCart in _unitOfWork.ShoppingCartRepository.GetAll(u => u.ApplicationUserId == userId))
-            {
-                updateCount += userCart.Count; 
-            }
-            HttpContext.Session.SetInt32(SD.SESSION_CART, updateCount);
+            UpdateCartCount();
 
             TempData["success"] = "Cart updated successfully!";
 
             return RedirectToAction(nameof(Index));
         }
-
 
         public IActionResult Privacy()
         {
@@ -87,6 +89,21 @@ namespace BulkyWeb.Areas.Customer.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+
+        private void UpdateCartCount()
+        {
+            // retrieve the userID of currently logged in user
+            var claimsIdentity = (ClaimsIdentity)User.Identity;
+            var userId = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier).Value;
+
+            // setting session for displaying count in cart icon
+            int updateCount = 0;
+            foreach (var userCart in _unitOfWork.ShoppingCartRepository.GetAll(u => u.ApplicationUserId == userId))
+            {
+                updateCount += userCart.Count; 
+            }
+            HttpContext.Session.SetInt32(SD.SESSION_CART, updateCount);
         }
     }
 }
