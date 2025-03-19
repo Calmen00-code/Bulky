@@ -22,16 +22,6 @@ namespace BulkyWeb.Areas.Customer.Controllers
 
         public IActionResult Index()
         {
-            // retrieve the userID of currently logged in user
-            var claimsIdentity = (ClaimsIdentity)User.Identity;
-            var claim = claimsIdentity.FindFirst(ClaimTypes.NameIdentifier);
-            
-            if (claim != null)
-            {
-                // reflect the cart count if user is logged in
-                UpdateCartCount();
-            }
-
             IEnumerable<Product> products = _unitOfWork.ProductRepository.GetAll(includeProperties: "Category").ToList();
             return View(products);
         }
