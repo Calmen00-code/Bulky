@@ -188,6 +188,8 @@ namespace BulkyWeb.Areas.Customer.Controllers
                     _unitOfWork.OrderHeaderRepository.UpdateStatus(id, SD.ORDER_STATUS_APPROVED, SD.PAYMENT_STATUS_APPROVED);
                     _unitOfWork.Save();
                 }
+
+                HttpContext.Session.Clear();
             }
 
             List<ShoppingCart> shoppingCarts = _unitOfWork.ShoppingCartRepository
