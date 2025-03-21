@@ -49,7 +49,6 @@ namespace Bulky.DataAccess.DbInitializer
                 _roleManager.CreateAsync(new IdentityRole(SD.ROLE_COMPANY)).GetAwaiter().GetResult();
                 _roleManager.CreateAsync(new IdentityRole(SD.ROLE_ADMIN)).GetAwaiter().GetResult();
 
-
                 // if roles are not created, then we will create admin user as well
                 _userManager.CreateAsync
                 (
