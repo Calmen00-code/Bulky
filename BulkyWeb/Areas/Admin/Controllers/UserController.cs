@@ -53,12 +53,26 @@ namespace BulkyWeb.Areas.Admin.Controllers
             return Json(new {data = users});
         }
 
-        // remove this HttpDelete tag when u are not using SweetAlert
-        [HttpDelete]
-        public IActionResult Delete(int? id)
+        [HttpPost]
+        public IActionResult LockUnlock([FromBody] string id)
         {
+            var userFromDb = _db.ApplicationUsers.FirstOrDefault(u => u.Id == id);
+            if (userFromDb == null)
+            {
+                return Json(new { success = false, message = "Error while locking/unlocking" });
+            }
 
-            return Json(new {success = true, message = "Deleted Successful"});
+            if (userFromDb.LockoutEnd != null && userFromDb.LockoutEnd > DateTime.Now)
+            {
+                // user is currently locked and we need to unlock them
+                userFromDb.LockoutEnd = DateTime.Now;
+            }
+            else
+            {
+                userFromDb.LockoutEnd = DateTime.Now.AddYears(1000);
+            }
+            _db.SaveChanges();
+            return Json(new {success = true, message = "Operation Successful"});
         }
 
         #endregion
