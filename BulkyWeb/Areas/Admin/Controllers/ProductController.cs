@@ -52,7 +52,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             {
                 // Update path
                 productVM.Product = _unitOfWork.ProductRepository.Get(u=>u.Id == id);
-                System.Diagnostics.Debug.WriteLine(productVM.Product.ImageUrl);
+                // System.Diagnostics.Debug.WriteLine(productVM.Product.ImageUrl);
                 return View(productVM);
             }
         }
@@ -85,25 +85,25 @@ namespace BulkyWeb.Areas.Admin.Controllers
                     string fileName = Guid.NewGuid().ToString() + Path.GetExtension(file.FileName);
                     string productPath = Path.Combine(wwwRootPath, @"images\product");
 
-                    if (!string.IsNullOrEmpty(productVM.Product.ImageUrl))
-                    {
-                        // updating new image, deleting old image
-                        // removing the first forward slash
-                        var oldImagePath =
-                            Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
+                    //if (!string.IsNullOrEmpty(productVM.Product.ImageUrl))
+                    //{
+                    //    // updating new image, deleting old image
+                    //    // removing the first forward slash
+                    //    var oldImagePath =
+                    //        Path.Combine(wwwRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
 
-                        if (System.IO.File.Exists(oldImagePath))
-                        {
-                            System.IO.File.Delete(oldImagePath);
-                        }
-                    }
+                    //    if (System.IO.File.Exists(oldImagePath))
+                    //    {
+                    //        System.IO.File.Delete(oldImagePath);
+                    //    }
+                    //}
 
-                    using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
-                    {
-                        file.CopyTo(fileStream);
-                    }
+                    //using (var fileStream = new FileStream(Path.Combine(productPath, fileName), FileMode.Create))
+                    //{
+                    //    file.CopyTo(fileStream);
+                    //}
 
-                    productVM.Product.ImageUrl = @"\images\product\" + fileName;
+                    //productVM.Product.ImageUrl = @"\images\product\" + fileName;
                 }
 
                 if (productVM.Product.Id == 0)
@@ -156,13 +156,13 @@ namespace BulkyWeb.Areas.Admin.Controllers
 
             string wwwRootPath = _webHostEnvironment.WebRootPath;
 
-            var oldImagePath = 
-                Path.Combine(wwwRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
+            // var oldImagePath = 
+            //     Path.Combine(wwwRootPath, productToBeDeleted.ImageUrl.TrimStart('\\'));
 
-            if (System.IO.File.Exists(oldImagePath))
-            {
-                System.IO.File.Delete(oldImagePath);
-            }
+            //if (System.IO.File.Exists(oldImagePath))
+            //{
+            //    System.IO.File.Delete(oldImagePath);
+            //}
 
             _unitOfWork.ProductRepository.Remove(productToBeDeleted);
             _unitOfWork.Save();
