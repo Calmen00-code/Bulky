@@ -50,8 +50,10 @@ namespace Bulky.Models
         [ForeignKey("CategoryId")]
         [ValidateNever]
         public Category Category { get; set; }
-        
 
-
+        // one to many relation.
+        // one Product can have many images
+        [ValidateNever]        
+        public List<ProductImage> ProductImages { get; set; }
     }
 }
