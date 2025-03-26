@@ -145,6 +145,32 @@ namespace BulkyWeb.Areas.Admin.Controllers
             }
         }
 
+        public IActionResult DeleteImage(int imageId)
+        {
+            var imageToBeDeleted = _unitOfWork.ProductImageRepository.Get(u => u.Id == imageId);
+            if (imageToBeDeleted != null)
+            {
+                if (!string.IsNullOrEmpty(imageToBeDeleted.ImageUrl))
+                {
+                    string wwwRootPath = _webHostEnvironment.WebRootPath;
+                    var oldImagePath = 
+                         Path.Combine(wwwRootPath, imageToBeDeleted.ImageUrl.TrimStart('\\'));
+        
+                    if (System.IO.File.Exists(oldImagePath))
+                    {
+                        System.IO.File.Delete(oldImagePath);
+                    }
+                }
+
+                _unitOfWork.ProductImageRepository.Remove(imageToBeDeleted);
+                _unitOfWork.Save();
+
+                TempData["success"] = "Deleted successfully!";
+            }
+
+            return RedirectToAction(nameof(Upsert), new {id = imageToBeDeleted.ProductId});
+        }
+
         // this allow API to be called by external sources
         #region API CALLS
 
