@@ -51,7 +51,7 @@ namespace BulkyWeb.Areas.Admin.Controllers
             else
             {
                 // Update path
-                productVM.Product = _unitOfWork.ProductRepository.Get(u=>u.Id == id);
+                productVM.Product = _unitOfWork.ProductRepository.Get(u=>u.Id == id, includeProperties: "ProductImages");
                 // System.Diagnostics.Debug.WriteLine(productVM.Product.ImageUrl);
                 return View(productVM);
             }
